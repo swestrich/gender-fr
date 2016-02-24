@@ -10,7 +10,7 @@ $ npm install --save gender-fr
 ## Usage
 
 ```js
-var gender = require('measurewords-zh');
+var gender = require('gender-fr');
 
 gender.gendersForNoun('actrice', function(err, genders) {
   if (err) {
