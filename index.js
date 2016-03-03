@@ -28,6 +28,14 @@ module.exports.gendersForNoun = function(str, clb) {
         genders.push('m');
         genders.push('f');
       }
+    } else {
+      //pretty good idea if the word ends in these
+      if (str.endsWith('euse')) genders.push('f');
+      else if (str.endsWith('ette')) genders.push('f');
+      else if (str.endsWith('et')) genders.push('m');
+      else if (str.endsWith('eur')) genders.push('m');
+      else if (str.endsWith('enne')) genders.push('f');
+      else if (str.endsWith('trice')) genders.push('f');
     }
     clb(err, genders);
   });

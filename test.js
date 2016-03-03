@@ -97,3 +97,16 @@ gender.addIndefiniteArticle('lampe', function(err, article) {
   test.assert(article ==='une lampe');
 });
 
+gender.addIndefiniteArticle('camionnette', function(err, article) {
+  if (err) {
+    throw err;
+  }
+  test.assert(article ==='une camionnette');
+});
+
+gender.addIndefiniteArticle('camionneuse', function(err, article) {
+  if (err) {
+    throw err;
+  }
+  test.assert(article ==='une camionneuse');
+});
