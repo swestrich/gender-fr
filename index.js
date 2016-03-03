@@ -1,7 +1,7 @@
 'use strict';
 
 var sqlite3 = require('sqlite3').verbose();
-var db = new sqlite3.Database('./DictionaryModel.sqlite', sqlite3.OPEN_READONLY);
+var db = new sqlite3.Database(__dirname + '/DictionaryModel.sqlite', sqlite3.OPEN_READONLY);
 var diacritics = require('diacritics');
 
 function contains(a, obj) {
