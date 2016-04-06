@@ -1,6 +1,6 @@
 {
   "name": "gender-fr",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "Get the gender (masculine, feminine) for each noun in french.",
   "main": "index.js",
   "scripts": {
@@ -12,7 +12,12 @@
   },
   "keywords": [
     "french",
-    "gender"
+    "gender",
+    "article",
+    "feminine",
+    "masculine",
+    "definite",
+    "indefinite",
   ],
   "author": "swestrich",
   "license": "MIT",
